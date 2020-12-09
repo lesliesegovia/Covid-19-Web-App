@@ -8,13 +8,17 @@ import './App.css';
 import DisplayTestSites from './components/DisplayTestSites';
 import DisplayLocationDetails from './components/DisplayLocationDetails';
 import ScrollToTop from './components/effects/ScrollToTop';
+import HomePage from './components/HomePage';
 
 class App extends Component {
   state = {
     stats: [],
     currentStats: {},
     locationLinks: links,
-    locations: []
+    locations: [],
+    displayDownButton: false,
+    displayUpButton: false,
+    scrollPosition:0
   }
 
   // saveStateToLocalStorage() {
@@ -92,6 +96,10 @@ class App extends Component {
       <Router>
         <div className='eachStat'>
           <Route exact path='/' render={props => (
+              <HomePage />
+            )} />
+
+          <Route exact path='/displayStats' render={props => (
             <DisplayStats 
               changeDate={ this.changeDate } 
               currentStats={ this.state.currentStats } 

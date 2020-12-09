@@ -1,0 +1,137 @@
+
+/* ------------------------------- NAVBAR ------------------------------ */
+.navbar{
+  text-align: center;
+  padding-top: 50px;
+}
+  
+  .navbar a {
+    /* color: #8a8a8a; */
+    /* color: rgb(156, 156, 156); */
+    color: white;
+    text-align: center;
+    padding-right: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    /* color: black; */
+  color: rgb(156, 156, 156);
+  }
+  
+  .navbar a.active {
+    /* color: whitesmoke; */
+    color: rgb(156, 156, 156);
+  }
+  
+/* ------------------------------- HEADER ------------------------------ */
+.header-section{
+  background-color: #0B5E7D;
+  /* height: 100vh; */
+  height: 530px;
+  width: 100%;
+}
+
+.header-content{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin: auto;
+  width: 85%;
+}
+
+.navbar-content{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 85%;
+}
+
+.content-details img{
+  margin-top: 50px;
+width: 100%;
+height: auto;
+}
+
+.content-details{
+  text-align: center;
+  /* margin: auto; */
+  width: 50%;
+}
+
+#covid-title{
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  float: left;
+}
+
+.detail-title{
+  padding-top: 100px;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  float: left;
+  text-align: left;
+}
+
+.detail-text{
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  color: #c9e265;
+}
+
+.detail-text a{
+  text-decoration: underline;
+  color: #c9e265;
+}
+
+/* ------------------------------- BODY ------------------------------ */
+
+body{
+  margin: 0px;
+}
+
+#about-section{
+  width: 85%;
+  margin: 300px auto 0px auto;
+}
+
+.quiz-section{
+  margin: 100px auto 50px auto;
+}
+
+#about-content h1{
+  text-align: center;
+  color: #0B5E7D;
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+#symptom-notice{
+  color: #0B5E7D;
+  text-align: center;
+  /* margin: 40px 0px 0px 0px; */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+
+/* ------------------------------- FOOTER ------------------------------ */
+
+footer{
+  background-color: #f6f6f6;
+  height: 150px;
+}
+
+footer p{
+  color: #57646c;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}

@@ -1,0 +1,27 @@
+.symptom{
+    margin: 50px auto 60px;
+    max-width: 980px;
+}
+
+.symptom-list{
+    display: block;
+    column-count: 2;
+    margin: auto;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    /* width: 50%; */
+    margin-bottom: 15px;
+    color:#57646c;
+    line-height: 1.4em;
+}
+
+ul.symptom-list{
+    list-style-image: url("../../assets/checkmark.png");
+}

@@ -2,12 +2,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body{
   font-family: Arial, helvetica, sans-serif;
   line-height: 1.4;
-  background-color: aqua;
 }
 
 a{
@@ -15,6 +15,80 @@ a{
   text-decoration: none;
 }
 
+
+/* ------------------------------- NAVBAR ------------------------------ */
+.navbar2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding-top: 50px;
+  float: right;
+  width: 55%;
+}
+  
+.navbar2 a {
+  /* color: #8a8a8a; */
+  /* color: rgb(156, 156, 156); */
+  color: white;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.navbar2 a:hover {
+  /* color: black; */
+  color: rgb(156, 156, 156);
+}
+
+.navbar2 a.active {
+  /* color: whitesmoke; */
+  color: rgb(156, 156, 156);
+}
+/* ------------------------------- NAVBAR ------------------------------ */
+
+/* ------------------------------- HEADER ------------------------------ */
+.statsHeader2 {
+  background-color: #0B5E7D;
+  width: 100%;
+}
+
+.navbar-content2{
+  margin: auto;
+  width: 96%;
+  background-color: #0B5E7D;
+}
+
+.content-details2{
+  text-align: center;
+  /* margin: auto; */
+  width: 45%;
+  float: left;
+}
+
+@media screen and (max-width: 800px) {
+  .content-details2, .navbar2 {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+#covid-title2{
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-transform: capitalize;
+}
+/* ------------------------------- HEADER ------------------------------ */
+
+/* ------------------------------- STATS PAGE ------------------------------ */
 .container {
   padding: 0 1rem;
 }
@@ -22,24 +96,64 @@ a{
 .parent {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 10px;
+  width: 100%;
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  margin: 10px;
-  padding: 2%;
-  border-radius: 25px;
-  width: 95%;
-  background-color: white;
+  margin: 0px;
+  padding-top: 1%;
+  width: 100%;
 }
 
-.card:hover {
+/* .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+} */
+
+.map {
+  width: 25%;
+}
+
+.mapAndCountry {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2%;
+}
+
+.countryName {
+  color: #0B5E7D;
+  font-size: 5em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 50px;
+}
+
+.stateName {
+  color: #0B5E7D;
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.allCases {
+  background-color: #0B5E7D;
+  padding-bottom: 30px;
+}
+
+.allCases h1 {
+  text-align: center;
+  color: #c9e265;
+  font-size: 3.5em;
+  margin: 0px 0px 15px 0px;
+  padding-top: 5%;
 }
 
 .allStats {
@@ -48,32 +162,25 @@ a{
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
+  color: white;
+  font-size: 30px;
 }
 
 .stat {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
   float: left;
 }
 
 .active, .confirmed, .deaths, .recovered {
-  position: relative;
-  width: 100px;
-  line-height: 100px;
-  border-radius: 50%;
-  text-align: center;
-  background-color: black;
-  color: white;
-}
-
-.header {
-  background-color: aqua;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   border-radius: 25px;
-  margin: 10px;
-  text-transform: capitalize;
+  text-align: center;
+  border: 2px solid #c9e265;
+  padding: 25px;
 }
 
 /*:focus {
@@ -81,6 +188,23 @@ a{
   outline-width: 5px;
   outline-style: solid;
 }*/
+/* ------------------------------- STATS PAGE ------------------------------ */
+
+/* ------------------------------- FOOTER ------------------------------ */
+footer{
+  background-color: #f6f6f6;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+footer p{
+  color: #57646c;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}
+/* ------------------------------- FOOTER ------------------------------ */
 
 .userDate {
   padding:8px;
@@ -95,39 +219,51 @@ a{
   border-radius: 25px;
   margin: 10px;
   padding: 2%;
+  color: white;
 }
 
-.stateName {
-  text-transform: capitalize;
+/* ------------------------------- TEST SITES ------------------------------ */
+.testSitesPage {
+  display: flex;
+  flex-direction: column;
+  background-color: #0B5E7D;
 }
 
 .location {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  margin: 10px;
-  border-radius: 25px;
-  background-color: white;
   text-align: center;
-}
-
-.location:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  text-align: center;
+  width: 100%;
+  padding-top: 10%;
 }
 
 .testSites {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200pt, 1fr));
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-bottom: 2%;
+}
+
+.stateName {
+  color: #c9e265;
+  text-transform: capitalize;
 }
 
 .singleSite {
   margin: 4px;
   transition: .2s;
+  color: white;
 }
 
 .singleSite:hover {
   transform: scale(1.5);
+}
+
+.testSiteNames {
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: 25px;
+  border: 2px solid #c9e265;
+  padding-bottom: 5%;
+  margin-bottom: 5%;
 }
 
 .allSites {
@@ -137,14 +273,20 @@ a{
 
 .locationBtn {
   display: inline-block;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 15px;
-  padding: 2.5px;
   transition: all 0.5s;
+  background-color:#c9e265;
+  border: none;
+  color:#485224;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 30px auto 0px auto;    /* margin: 4px 2px; */
   cursor: pointer;
-  margin: 5px;
-  cursor: pointer;
+  border-radius: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .locationBtn span {
@@ -171,37 +313,58 @@ a{
   opacity: 1;
   right: 0;
 }
+/* ------------------------------- TEST SITES ------------------------------ */
+
+/* ------------------------------- LOCATION DETAILS ------------------------------ */
+.locDetPage {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
 
 .singleLocationDetails {
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  margin: 15px;
+  background-color: #0B5E7D;
   padding: 2%;
-  border-radius: 25px;
   overflow: auto;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.singleLocationDetails:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.nameOfState {
+  color: #c9e265;
+  font-size: 3em;
+  margin: 10px;
+  text-transform: capitalize;
+}
+
+.fullDescription {
+  border: 2px solid #c9e265;
+  border-radius: 25px;
+  float: left;
 }
 
 .description {
+  color: white;
   float: left;
   width: 70%;
   padding: 10px;
 }
 
 .addressAndPhone{
+  color: white;
   float: right;
   width: 25%;
   padding: 10px;
 }
 
+
+.dayOfWeek {
+  color: #c9e265;
+}
+
 .workHours {
+  color: white;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -227,17 +390,37 @@ a{
 }
 
 .mapLink, .telephoneLink {
-  color: blue;
+  color: #c9e265;
 }
 
 .mapLink:hover, .telephoneLink:hover {
-  color: darkblue;
+  color: #7d8c3e;
+}
+/* ------------------------------- LOCATION DETAILS ------------------------------ */
+
+/* ------------------------------- SCROLL BUTTON ------------------------------ */
+.scroll {
+  opacity: 0.3;
+  background-color: #c9e265;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 5px;
+  border: none;
 }
 
-.nameOfState {
-  background-color: aqua;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 25px;
-  margin: 10px;
-  text-transform: capitalize;
+.scroll:hover {
+  opacity: 1;
 }
+
+.arrow-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -12.5px;
+  margin-left: -12px;
+  width: 60%;
+}
+/* ------------------------------- SCROLL BUTTON ------------------------------ */

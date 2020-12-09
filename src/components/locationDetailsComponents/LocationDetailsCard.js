@@ -27,18 +27,22 @@ export function LocationDetailsCard(props) {
     return (
         <div className='singleLocationDetails'>
             <h2 className='nameOfState' tabIndex='2'>{ name }</h2>
-            <div className='description' tabIndex='2'>
-                { description }
-            </div>
+            
+            <div className='fullDescription'>
+                <div className='description' tabIndex='2'>
+                    { description }
+                </div>
 
-            <div className='addressAndPhone'>
-                {checkForAddress()}
-                {checkForPhone()}
+                <div className='addressAndPhone'>
+                    {checkForAddress()}
+                    {checkForPhone()}
+                </div>
+                
+                <div className='workHours'>
+                    {checkWorkHours()}
+                </div>
             </div>
             
-            <div className='workHours'>
-                {checkWorkHours()}
-            </div>
         </div>
     )
 }
