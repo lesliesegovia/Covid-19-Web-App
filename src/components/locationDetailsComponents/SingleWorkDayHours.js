@@ -5,7 +5,7 @@ export default function SingleWorkDayHours(props) {
 
     return (
         <div className='singleWorkDayHours'>
-            <h4 tabIndex='2'>{days[props.workDay['weekday']]}</h4>
+            <h4 className='dayOfWeek' tabIndex='2'>{days[props.workDay['weekday']]}</h4>
             <p tabIndex='2'>Opens {props.workDay['opens_at']}</p>
             <p tabIndex='2'>Closes {props.workDay['closes_at']}</p>
         </div>

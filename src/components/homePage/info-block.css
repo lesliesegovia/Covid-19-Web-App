@@ -1,0 +1,23 @@
+.info-block h1{
+  text-align: center;
+  color: #0B5E7D;
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.info-block p{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    color:#57646c;
+    line-height: 2em;
+}
+
+.info-block img{
+    width: 50%;
+    display: block;
+    margin: 35px auto 150px auto;
+}

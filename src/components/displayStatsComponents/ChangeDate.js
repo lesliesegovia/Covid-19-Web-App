@@ -9,8 +9,8 @@ export class ChangeDate extends Component {
     render() {
         return (
             <div className='changeDate'>
-                <h3 tabIndex='4'>Select a date to view its stats:</h3>
-                <select className='dateOptions' name='option' onChange={ this.onChange } defaultValue={'default'} tabIndex='5'>
+                <h3 tabIndex='3'>Select a date to view its stats:</h3>
+                <select className='dateOptions' name='option' onChange={ this.onChange } defaultValue={'default'} tabIndex='4'>
                     <option value='default' disabled>Choose a date</option>
                     <DateOptions allStats={ this.props.allStats } />
                 </select>
