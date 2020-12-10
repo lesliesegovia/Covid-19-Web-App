@@ -236,6 +236,10 @@ footer p{
   padding-top: 10%;
 }
 
+.changeDate h3 {
+  color: white;
+}
+
 .testSites {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200pt, 1fr));
