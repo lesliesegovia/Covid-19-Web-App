@@ -6,8 +6,6 @@
 }
   
   .navbar a {
-    /* color: #8a8a8a; */
-    /* color: rgb(156, 156, 156); */
     color: white;
     text-align: center;
     padding-right: 30px;
@@ -18,19 +16,16 @@
   }
   
   .navbar a:hover {
-    /* color: black; */
   color: rgb(156, 156, 156);
   }
   
   .navbar a.active {
-    /* color: whitesmoke; */
     color: rgb(156, 156, 156);
   }
   
 /* ------------------------------- HEADER ------------------------------ */
 .header-section{
   background-color: #0B5E7D;
-  /* height: 100vh; */
   height: 530px;
   width: 100%;
 }
@@ -57,7 +52,6 @@ height: auto;
 
 .content-details{
   text-align: center;
-  /* margin: auto; */
   width: 50%;
 }
 
@@ -116,9 +110,50 @@ body{
 #symptom-notice{
   color: #0B5E7D;
   text-align: center;
-  /* margin: 40px 0px 0px 0px; */
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
+}
+
+.prevent-content{
+  display: flex;
+  width: 85%;
+  margin: auto;
+  /* display: flex;
+  flex-wrap: wrap;
+  width: 65%;
+  margin: 5% auto 5% auto; */
+}
+
+.info-card img {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+}
+
+
+.info-card{
+  width: 50%;
+  text-align: center;
+  line-height: 2;
+  margin: 0px 30px 0px 30px;
+}
+.info-card p{
+  color: #555;
+  font-family: 'Montserrat', sans-serif;
+}
+.info-card h3{
+  text-align: center;
+  color: #0B5E7D;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.prevent-section h1{
+  text-align: center;
+  color: #0B5E7D;
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 /* ------------------------------- FOOTER ------------------------------ */

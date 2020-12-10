@@ -9,6 +9,7 @@ import DisplayTestSites from './components/DisplayTestSites';
 import DisplayLocationDetails from './components/DisplayLocationDetails';
 import ScrollToTop from './components/effects/ScrollToTop';
 import HomePage from './components/HomePage';
+import About from './components/about/about';
 
 class App extends Component {
   state = {
@@ -95,9 +96,9 @@ class App extends Component {
     return (
       <Router>
         <div className='eachStat'>
-          <Route exact path='/' render={props => (
-              <HomePage />
-            )} />
+          <Route exact path='/' component={ HomePage } />
+
+          <Route exact path='/about' component={ About } />
 
           <Route exact path='/displayStats' render={props => (
             <DisplayStats 

@@ -1,0 +1,58 @@
+.wca-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    margin: 15px auto 15px auto;
+    text-align: center;
+    padding-bottom: 30px;
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+  }
+
+.wca-card h2{
+    font-family: 'Montserrat',Helvetica,Arial,sans-serif;
+    color: #0B5E7D;
+}
+
+  .wca-icon{
+    width: auto;
+    height: 75px;
+    margin: 20px auto 10px auto;
+  }
+
+  #description{
+    margin: 0px 20px;
+    font-size: 14px;
+    font-family: 'Montserrat',Helvetica,Arial,sans-serif;
+    color: #555;
+  }
+
+  /* .section {
+    color: rgb(136, 33, 233);
+    font-size: 18px;
+    font-family: 'Montserrat',Helvetica,Arial,sans-serif;
+  } */
+
+  .wca{
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 5% auto 5% auto;
+  }
+
+  /* #projects{
+    margin: 5% auto 5% auto;
+  } */
+
+  .wca ul{
+      list-style-type: none;
+      padding: 0px;
+  }
+
+  .wca li{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px auto 15px auto;
+    color:#57646c;
+    line-height: 1.4em;
+  }
