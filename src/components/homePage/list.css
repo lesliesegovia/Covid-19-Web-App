@@ -9,6 +9,12 @@
     margin: auto;
 }
 
+@media screen and (max-width: 800px) {
+    .symptom-list{
+      column-count: 1;
+    }
+  }
+
 ul{
     list-style-type: none;
 }

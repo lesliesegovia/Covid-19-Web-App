@@ -22,7 +22,7 @@ export function DisplayTestSites(props) {
                 <p><span tabIndex='0'>This web app was created as a project for class.</span> <br/> <b tabIndex='0'>All test sites information was sourced from the <a target="_blank" href="https://documenter.getpostman.com/view/8854915/SzS7PR3t?version=latest">COVID-19 API Testing Locations API</a></b>.</p>
             </footer>
 
-            <ScrollButton scrollStepInPx="50" delayInMs="2" />
+            <ScrollButton scrollStepInPx="100" delayInMs="2" />
         </div>
         
     )

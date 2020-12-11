@@ -4,8 +4,8 @@ import "./info-block.css";
 function InfoBlock (props){
     return (
         <div className="info-block">
-            <h1>{props.title}</h1>
-            <p>{props.info}</p>
+            <h1 tabIndex='5'>{props.title}</h1>
+            <p tabIndex='5'>{props.info}</p>
             <img src={props.img}/>
         </div>
     );

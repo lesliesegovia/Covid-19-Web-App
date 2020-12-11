@@ -21,48 +21,53 @@ function HomePage(){
     return(
         <div>
             <section className="header-section">
-            <div className="navbar-content">
-                <div className="content-details">
-                    <h1 id="covid-title">COVID-19</h1>
+                <div className='header'>
+                    <div className="navbar-content">
+                        <div className="content-details1">
+                            <h1 id="covid-title" tabIndex='1'>COVID-19</h1>
+                        </div>
+                        <Navbar/>
+                    </div>
                 </div>
-                <Navbar/>
-            </div>
-            
-            <div className="header-content">
-                <div className="content-details">
-                    <img src={backgroundpics} alt="Three seperate images about social distancing, washing hands and wearing a mask."/>
+                
+                
+                <div className="header-content">
+                    <div className="content-details">
+                        <img src={backgroundpics} alt="Three seperate images about social distancing, washing hands and wearing a mask."/>
+                    </div>
+                    <div className="content-details">
+                        <h1 className="detail-title" tabIndex='3'>Learn about Covid-19 and more.</h1>
+                        <h1 className="detail-text" tabIndex='4'><a href="#quiz" tabIndex='4'>Take the quiz</a> to see if you should get tested.</h1>
+                    </div>
                 </div>
-                <div className="content-details">
-                    <h1 className="detail-title">Learn about Covid-19 and more.</h1>
-                    <h1 className="detail-text"><a href="#quiz">Take the quiz</a> to see if you should get tested.</h1>
-                </div>
-            </div>
             </section>
 
             <section id="about-section">
                 <div id="about-content">
-                <InfoBlock
-                    title="What is Covid-19 ?"
-                    info="According to the CDC, Coronavirus disease 2019 (COVID-19) is a respiratory illness caused by a virus. COVID-19 can sometimes cause serious complications. People at a higher risk for severe illness include
-                        older adults and people of any age who have underlying medical conditions."
-                    img={covidVisual}
-                    alt="Visual of Covid cell going to a pair of lungs to represent how covid attacks the body."
-                />
-
-                 <InfoBlock
-                    title="How does it spread ?"
-                    info="COVID-19 mainly spreads from person-to-person through respiratory droplets between people who are in close contactwith one another (within 6 feet for a total of 15 minutes or more).
-                        The droplets are produced when a person who is infected with the virus that causes COVID-19 coughs, sneezes, or talks.
-                        You can get the virus from people who don’t seem sick or don’t have any symptoms.
-                        You might be able to get COVID-19 by shaking someone’s hand or touching a surface or object that has the virus on it and then touching your face, mouth, nose, or eyes."
-                    img={group}
-                    alt="Group of people in close contact to represent no social distancing or mask wearing."
-                />
-
-                <h1>What are the symptoms ?</h1>
-                    <p id="symptom-notice">Notice: Symptoms may appear <b>2-14 days after</b> exposure to the virus.</p>
+                    <div className='info-blocks'>
+                        <InfoBlock
+                            title="What is Covid-19 ?"
+                            info="According to the CDC, Coronavirus disease 2019 (COVID-19) is a respiratory illness caused by a virus. COVID-19 can sometimes cause serious complications. People at a higher risk for severe illness include
+                                older adults and people of any age who have underlying medical conditions."
+                            img={covidVisual}
+                            alt="Visual of Covid cell going to a pair of lungs to represent how covid attacks the body."
+                        />
+                        
+                        <InfoBlock
+                            title="How does it spread ?"
+                            info="COVID-19 mainly spreads from person-to-person through respiratory droplets between people who are in close contact with one another (within 6 feet for a total of 15 minutes or more).
+                                The droplets are produced when a person who is infected with the virus that causes COVID-19 coughs, sneezes, or talks.
+                                You can get the virus from people who don’t seem sick or don’t have any symptoms.
+                                You might be able to get COVID-19 by shaking someone’s hand or touching a surface or object that has the virus on it and then touching your face, mouth, nose, or eyes."
+                            img={group}
+                            alt="Group of people in close contact to represent no social distancing or mask wearing."
+                        />
+                        
+                    </div>
+                    <h1 tabIndex='7'>What are the symptoms ?</h1>
+                    <p id="symptom-notice" tabIndex='8'>Notice: Symptoms may appear <b>2-14 days after</b> exposure to the virus.</p>
                     <SymptomList/>
-                    <p id="symptom-notice">This list does not include all possible symptoms. CDC will continue to update this list as they learn more about COVID-19.</p>
+                    <p id="symptom-notice" tabIndex='9'>This list does not include all possible symptoms. CDC will continue to update this list as they learn more about COVID-19.</p>
                 </div>
             </section>
 
@@ -73,7 +78,7 @@ function HomePage(){
             </section>
 
             <section id="prevent" className="prevent-section">
-            <h1>Ways to Prevent Covid-19</h1>
+            <h1 tabIndex='29'>Ways to Prevent Covid-19</h1>
                 <div className="prevent-content">
                     <InfoCard
                     img = {wash}
@@ -93,8 +98,6 @@ function HomePage(){
                     title = "Wear a mask"
                     text = "Masks help prevent you from getting or spreading the virus. Everyone should wear a mask in public settings and when around people who don’t live in your household, especially when other social distancing measures are difficult to maintain."
                     />
-                    </div>
-                    <div className="prevent-content">
                      <InfoCard
                     img = {tissue}
                     alt = "Tissue box."
@@ -117,7 +120,7 @@ function HomePage(){
             </section>
 
             <footer>
-                <p>This web app was created as a project for class. <br/> <b>All information was sourced from the <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC</a></b>.</p>
+                <p><span tabIndex='31'>This web app was created as a project for class.</span> <br/> <b tabIndex='32'>All information was sourced from the <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" tabIndex='33'>CDC</a></b>.</p>
             </footer>
 
             <ScrollButton scrollStepInPx="50" delayInMs="3" />
